@@ -46,6 +46,10 @@ namespace BookStoreApp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("PublishDate")
                         .HasColumnType("datetime2");
 
